@@ -1,6 +1,6 @@
 provider "aws" {
-  access_key = "AKIAV74BDHRRIOEL5ZYW" #replace with access key of your aws account
-  secret_key = "UnjriC/0/GFucr+1UjrXooqrAzKph3feU512ZwC4" #replace with secret key of your aws account
+  access_key = "AKIAV74BDHRRIOEL5XXX" #replace with access key of your aws account
+  secret_key = "UnjriC/0/GFucr+1UjrXooqrAzKph3feU51XXXXX" #replace with secret key of your aws account
   region     = "us-west-2"
 }
 

@@ -1,0 +1,11 @@
+- hosts: 54.213.232.64 #replace with ip address of your aws instance 
+  become: yes
+  tasks:
+    - name: Installs Nginx web server
+      apt: pkg=nginx state=installed update_cache=true
+      notify:
+        - start nginx
+
+  handlers:
+      - name: start Nginx
+        service: name=nginx state=started

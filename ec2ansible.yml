@@ -1,0 +1,16 @@
+- hosts: localhost
+  gather_facts: false
+
+
+  tasks:
+    - name: Provision instance
+      ec2:
+        aws_access_key: "AKIAV74BDHRRIOEL5ZYW" #replace with access key of your aws account
+        aws_secret_key: "UnjriC/0/GFucr+1UjrXooqrAzKph3feU512ZwC4" #replace with secret key of your aws account
+        key_name: /Users/yellapantula/Downloads/trial.pem #replace path to your downloaded key
+        instance_type: t2.micro
+        image: ami-0d1cd67c26f5fca19
+        wait: yes
+        count: 1
+        region: us-west-2
+
